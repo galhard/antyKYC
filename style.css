@@ -1,0 +1,73 @@
+html {
+  font-size: 62.5%;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --background_main: #0a100dff;
+  --background_second: #909590;
+  --background_second_shade: #d6d5c9ff;
+  --text: #30362f;
+  --text_shade: #902923ff;
+  --number_color: #c92a2a;
+}
+body {
+  line-height: 1;
+  font-family: sans-serif;
+  background-color: var(--background_main);
+}
+.exchange {
+  max-width: 70rem;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  background-color: var(--background_second);
+  padding: 3.2rem;
+  margin: 50vh auto;
+  transform: translateY(-50%);
+  color: var(--text);
+  font-size: 2.4rem;
+  border-radius: 2rem;
+}
+.exchange_position {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  /* width: 50rem;
+  height: 50rem; */
+  text-align: center;
+
+  color: #828682;
+  font-size: 50rem;
+  /* border: 3px solid var(--number_color);
+  border-radius: 50%; */
+  z-index: -1;
+}
+
+.exchange_update {
+  grid-column: 1/3;
+  grid-row: 1;
+  justify-self: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.exchange_name {
+  grid-column: 1/3;
+}
+.exchange_links {
+  grid-row: 3;
+}
+.exchange_registration {
+  grid-column: 2;
+}
+.exchange_limits {
+}
+.exchange_stables {
+  grid-row: 5;
+}
