@@ -4,87 +4,75 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Anty KYC</title>
   </head>
   <body>
     <main>
-      <section class="exchange">
-        <span class="exchange_position">1</span>
+      <section class="exchanges">
+        <div class="exchange grid">
+          <div class="exchange_img_box">
+            <img
+              class="exchange_img"
+              src="img/ascendex.png"
+              alt="Ascendex exchange logo"
+            />
+            <h3 class="exchange_name">AscendEX</h3>
+          </div>
 
-        <div class="exchange_update">
-          <p>Last actualisation:</p>
-          <p>6 December 2021</p>
-        </div>
-        <div class="exchange_name">
-          <p>AscendEX</p>
-        </div>
-        <div class="exchange_links">
-          <p>Register</p>
-          <a href="https://ascendex.com/en-us/register?inviteCode=UOCNVYNPY"
-            >ref link</a
-          >
-          <a href="https://ascendex.com/en-us/register">non ref link</a>
-        </div>
-        <div class="exchange_registration">
-          <p>Needed to register/deposit/withdraw</p>
-          <p>Wstawić ikony np maila</p>
-        </div>
-        <div class="exchange_limits">
-          <span>~98,000 USD</span>
-        </div>
-        <div class="exchange_stables">
-          <div class="exchange-stables_grid">
-            <p>available stables</p>
-            <div class="usdc">
-              <img src="" alt="" />
-              <p>USDC</p>
-              <div class="exchange_stables_chains">
-                <img src="" alt="" /><img src="" alt="" /><img
-                  src=""
-                  alt=""
-                /><img src="" alt="" />
-              </div>
+          <div class="exchange_limit"><p>48,000$</p></div>
+          <div class="exchange_register_box">
+            <a href="#" class="exchange_register_link">register</a>
+            <div class="exchange_register_info">
+              <p>required</p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="mail_icon"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                />
+              </svg>
             </div>
-            <div class="usdt">
-              <img src="" alt="" />
-              <p>USDT</p>
-              <div class="exchange_stables_chains">
-                <img src="" alt="" /><img src="" alt="" /><img
-                  src=""
-                  alt=""
-                /><img src="" alt="" />
-              </div>
+          </div>
+          <div class="exchange_stables">
+            <p class="exchange_stables_title">
+              available deposit/withdrawal stablecoins
+            </p>
+            <div class="stable USDT">
+              <img class="stable_icon" src="" alt="" />
+              <p class="stable_name">USDT</p>
+              <img class="chain_icon" src="img/eth.svg" alt="" />
+              <img class="chain_icon solana" src="img/solana2.png" alt="" />
+              <img class="chain_icon tron" src="img/tron2.svg" alt="" />
             </div>
-            <div class="lusd">
-              <img src="" alt="" />
-              <p>LUSD</p>
-              <div class="exchange_stables_chains">
-                <img src="" alt="" /><img src="" alt="" /><img
-                  src=""
-                  alt=""
-                /><img src="" alt="" />
-              </div>
+            <div class="stable USDC">
+              <img class="stable_icon" src="" alt="" />
+              <p class="stable_name">USDC</p>
             </div>
-            <div class="usdx">
-              <img src="" alt="" />
-              <p>USDX</p>
-              <div class="exchange_stables_chains">
-                <img src="" alt="" /><img src="" alt="" /><img
-                  src=""
-                  alt=""
-                /><img src="" alt="" />
-              </div>
+            <div class="stable LUSD">
+              <img class="stable_icon" src="" alt="" />
+              <p class="stable_name">LUSD</p>
             </div>
-            <div class="usdp">
-              <img src="" alt="" />
-              <p>USDP</p>
-              <div class="exchange_stables_chains">
-                <img src="" alt="" /><img src="" alt="" /><img
-                  src=""
-                  alt=""
-                /><img src="" alt="" />
-              </div>
+            <div class="stable USDX">
+              <img class="stable_icon" src="" alt="" />
+              <p class="stable_name">USDX</p>
+            </div>
+            <div class="stable USDP">
+              <img class="stable_icon" src="" alt="" />
+              <p class="stable_name">USDP</p>
             </div>
           </div>
         </div>
