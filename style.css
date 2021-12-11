@@ -36,10 +36,28 @@ main {
 .exchanges {
   /* display: flex; */
   max-width: 120rem;
+  margin: 0 auto;
 }
+.exchanges_header {
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 8.6rem;
+}
+.exchanges_header-text-small {
+  color: var(--main-color);
+  text-shadow: 0 0 1px var(--main-color);
+  font-size: 1.2rem;
+}
+.exchanges_header-text-big {
+  color: #ddd;
+  /* text-shadow: 0 0 2px #eee; */
+  font-size: 4.8rem;
+  text-transform: uppercase;
+}
+
 .exchange {
   width: 30rem;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   border-radius: 2rem;
   padding: 2rem 0;
 }
