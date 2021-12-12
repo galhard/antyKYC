@@ -15,6 +15,8 @@ html {
   --text_shade: #902923ff;
   --number_color: #c92a2a;
   /* #6450DA */
+  /* EXCHANGES/STABLES/CHAINS COLORS */
+  --kucoin_green: #23af91;
 }
 body {
   line-height: 1;
@@ -54,7 +56,17 @@ main {
   font-size: 4.8rem;
   text-transform: uppercase;
 }
+.exchanges_header-update {
+  color: #22b8cf;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+.ranking_list {
+  display: flex;
+  gap: 9.8rem;
+}
 
+/* ########### EXCHANGE ########### */
 .exchange {
   width: 30rem;
   /* margin: 0 auto; */
@@ -66,7 +78,16 @@ main {
   position: relative;
 }
 .exchange_img {
+  display: block;
   width: 100%;
+  border-radius: 2rem;
+  margin: 0 auto;
+}
+.ascendex {
+  background-color: #222;
+}
+.kucoin {
+  background-color: var(--kucoin_green);
 }
 .exchange_name {
   position: absolute;
@@ -137,17 +158,27 @@ main {
   text-align: center;
   text-shadow: 0 0 0.5px #333;
 }
-.mail_icon {
+.exchange_register_info span {
+  font-size: 0.8rem;
+}
+.required_flex {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+.required_icon {
   width: 2.4rem;
   height: 2.4rem;
   stroke: #15aabf;
   filter: drop-shadow(0 0 1px #15aabf);
 }
+/* ########### EXCHANGE STABELS ########### */
 .exchange_stables {
   display: flex;
   flex-direction: column;
   gap: 1rem;
   align-items: center;
+  height: 30rem;
 }
 .exchange_stables::before {
   content: "";
@@ -167,10 +198,15 @@ main {
 .stable {
   display: flex;
   align-items: center;
-
+  /* width: 200px; */
   gap: 5px;
 }
-
+.stable_flex2 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 7rem;
+}
 .stable_icon {
   width: 20px;
   height: 20px;
@@ -178,9 +214,7 @@ main {
 .stable_name {
   font-size: 1.2rem;
   font-weight: 600;
-  margin-right: 4rem;
 }
-
 .stables_list {
   display: flex;
   flex-direction: column;
@@ -192,6 +226,9 @@ main {
   height: 20px;
   /* background-color: rgba(0, 0, 0, 0.1); */
 }
+.unavailable {
+  filter: opacity(40%);
+}
 .grid-3-columns {
   display: grid;
   grid-template-columns: repeat(3, auto);
@@ -199,6 +236,7 @@ main {
   align-items: center;
   column-gap: 1rem;
 }
+
 .vertical-text {
   writing-mode: vertical-lr;
   text-orientation: upright;
