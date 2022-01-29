@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Anty KYC</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navigation">
+        <!-- <img src="../img/logo.svg" alt="" class="page_logo" /> -->
+        <a class="navigation_link" href="#">Exchanges</a>
+        <a class="navigation_link" href="#">yield</a>
+        <a class="navigation_link" href="#">transfer</a>
+      </nav>
+    </header>
+    <main>
+      <section class="looping__section">
+        <form action="" onsubmit="return false">
+          <div class="looping__input-fields">
+            <div class="looping__flex--column">
+              <label class="looping__label" for="name">Initial value</label>
+              <input
+                class="looping__input init"
+                type="number"
+                name="name"
+                required
+                placeholder="Enter number"
+              />
+            </div>
+            <div class="looping__flex--column">
+              <label class="looping__label" for="name"
+                >Lending<br />
+                APR/APY</label
+              >
+              <input
+                class="looping__input lending looping__input--small"
+                type="number"
+                name="name"
+                required
+                placeholder="without %"
+              />
+            </div>
+            <div class="looping__flex--column">
+              <label class="looping__label" for="name">LTV*</label>
+              <input
+                class="looping__input ltv looping__input--small"
+                type="number"
+                name="name"
+                required
+                placeholder="without %"
+              />
+            </div>
+            <div class="looping__flex--column">
+              <label class="looping__label" for="name"
+                >Borrow <br />APR/APY</label
+              >
+              <input
+                class="looping__input borrow looping__input--small"
+                type="number"
+                name="name"
+                required
+                placeholder="without %"
+              />
+            </div>
+            <div class="looping__flex--column">
+              <label class="looping__label" for="name">Number of loops</label>
+              <input
+                class="looping__input loops looping__input--small"
+                type="number"
+                name="name"
+                required
+                placeholder="Enter number"
+              />
+            </div>
+          </div>
+          <div class="looping__result looping__flex--column hidden">
+            <p>After <span class="looping__number">5</span> loops you are</p>
+            <div class="looping__flex--column">
+              <div>
+                <p>Lending</p>
+                <p class="looping__lending-amount">2</p>
+              </div>
+              <div>
+                <p>Borrowing</p>
+                <p class="looping__borrowing-amount">2</p>
+              </div>
+            </div>
+            <div>
+              <p>this is your total apr</p>
+              <p><span class="looping__percentages">14</span> %</p>
+            </div>
+            <div>
+              <p>and you still can borrow</p>
+              <p class="looping__still">14</p>
+            </div>
+          </div>
+          <div class="looping__result2">
+            <div><input class="submit" type="submit" value="Submit" /></div>
+          </div>
+        </form>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
