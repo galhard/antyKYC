@@ -1,0 +1,210 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --main-color: #51cf66;
+  --background_main: #0a100dff;
+  --background_second: #909590;
+  --background_second_shade: #d6d5c9ff;
+  --text: #30362f;
+  --text_shade: #902923ff;
+  --number_color: #c92a2a;
+  /* #6450DA */
+  /* EXCHANGES/STABLES/CHAINS COLORS */
+  --kucoin_green: #23af91;
+}
+
+body {
+  line-height: 1;
+  font-family: "Rubik", sans-serif;
+  background-color: var(--background_main);
+}
+
+header {
+  margin: 2rem 6.2rem;
+}
+
+main {
+  margin: 0 auto;
+}
+
+p {
+  margin: 0;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.flex_dir-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* *****HEADER***** */
+.navigation {
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navigation_link {
+  font-size: 1.6rem;
+  color: #ddd;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  text-shadow: 0 0 3px #22b8cf;
+}
+
+.page_logo {
+  width: 6rem;
+  color: red;
+}
+
+/* *****RANKING***** */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 2rem;
+  background-color: #eee;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #333;
+}
+
+.exchanges {
+  /* display: flex; */
+  /* max-width: 120rem; */
+  margin: 0 auto;
+  margin: 5.2rem 6.2rem;
+}
+
+.exchanges_header {
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 8.6rem;
+}
+
+.exchanges_header-text-small {
+  color: var(--main-color);
+  text-shadow: 0 0 1px var(--main-color);
+  font-size: 1.2rem;
+}
+
+.exchanges_header-text-big {
+  color: #ddd;
+  /* text-shadow: 0 0 2px #eee; */
+  font-size: 4.8rem;
+  text-transform: uppercase;
+}
+
+.exchanges_header-update {
+  color: #22b8cf;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.ranking_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 9.8rem;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+/* ########### APR ########### */
+.looping__section {
+  margin: 15rem auto;
+  padding: 4rem;
+  width: 70rem;
+  height: 30rem;
+  background-color: #eee;
+  border-radius: 25px;
+  /* display: flex;
+  flex-direction: column; */
+  /* display: grid;
+  grid-template-columns: repeat(5, 1fr); */
+}
+
+.looping__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.looping__flex--column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.looping__flex--column label {
+  font-size: 1.6rem;
+}
+
+.looping__input-fields {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  /* gap: 1rem; */
+}
+
+.looping__label {
+  text-align: center;
+}
+
+.looping__input {
+  width: 10rem;
+  text-align: center;
+  font-size: 2.4rem;
+}
+
+.looping__input--small {
+  width: 7rem;
+  height: 4rem;
+  /* padding: 0.5rem 0.5rem; */
+}
+
+.looping__result {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  text-align: center;
+}
